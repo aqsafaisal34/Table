@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+         h1{
+             color:rgb(104, 150, 104) ;
+         }
+
+        .content-table{
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+            min-width: 400px;
+            border-radius: 5px 5px 0 0;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .content-table thead tr{
+            background-color: #009879;
+            color: #ffff;
+            text-align: left;
+            font-weight: bold;
+        }
+        .content-table th,
+        .content-table td{
+            padding: 12px 15px;
+        }
+
+        .content-table tbody tr{
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .content-table tbody tr:nth-of-type(even){
+            background-color: #f3f3f3;
+        }
+
+        .content-table tbody tr:last-of-type{
+            border-bottom: 2px solid #009879;
+        }
+        .content-table tbody tr.active-row{
+            font-weight: bold;
+            color:#009879 ;
+        }
+        thead tr th:hover{
+           background-color: #303b39; 
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Styling HTML Tables W/CSS</h1> <hr>
+    <table class="content-table">
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Product name</th>
+                <th>Color</th>
+                <th>Quantity</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Samsung galaxy A20</td>
+                <td>Rose Gold</td>
+                <td>10</td>
+                <td>$80</td>
+            </tr>
+            <tr class="active-row">
+                <td>2</td>
+                <td>Samsung galaxy A100</td>
+                <td>silver, Blue</td>
+                <td>20</td>
+                <td>$60</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Samsung galaxy Note 8</td>
+                <td>Golden</td>
+                <td>5</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Samsung galaxy Note 9</td>
+                <td>Golden</td>
+                <td>8</td>
+                <td>$120</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>iphone X</td>
+                <td>White, matte black</td>
+                <td>2</td>
+                <td>$200</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Iphone 7 plus</td>
+                <td>White</td>
+                <td>20</td>
+                <td>$300</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
